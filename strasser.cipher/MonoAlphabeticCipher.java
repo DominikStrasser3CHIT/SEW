@@ -1,11 +1,11 @@
-
+import  javax.crypto.*;
 public class MonoAlphabeticCipher implements Cipher
 {
     private String secretAlphabet;
     
     public MonoAlphabeticCipher () 
     {
-        secretAlphabet = "abcdefghijklmnopqrstuvwxyzäöüß";
+        secretAlphabet = "abcöüßdefyzäghivwxjklstumnopqr";
     }
 
     public String getSecretAlphabet ()
@@ -20,11 +20,16 @@ public class MonoAlphabeticCipher implements Cipher
     
     public String encrypt (String text)
     {
-        
+        text = text.toLowerCase();
+        for(int i = 0; text.length; i++)
+        {
+            
+        }
     }
     
     public String decrypt (String text)
     {
+        text = text.toLowerCase();
         
     }
 }   
