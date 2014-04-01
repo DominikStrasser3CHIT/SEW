@@ -1,14 +1,21 @@
-
+/**
+ * Enthält Methoden um das secretAlphabet mit einem GeheimAlphabet zu besetzten
+ * @author Dominik Strasser
+ * @version 31.3.14
+ */
 public class SubstitutionCipher extends MonoAlphabeticCipher
 {
 
-	public SubstitutionCipher (String secretAlphabet) 
-	{
-
-	}
-	public void setSecretAlphabet (String secretAlphabet)
-	{
-		
-	}
+    /**
+     * Das Geheimalphabet wird in secretAlphabet eingesetzt
+     */
+    public SubstitutionCipher (String secretAlphabet) 
+    {
+        super.setSecretAlphabet(secretAlphabet);
+    }
+    public void setSecretAlphabet (String secretAlphabet)
+    {
+        
+    }
 
 }
