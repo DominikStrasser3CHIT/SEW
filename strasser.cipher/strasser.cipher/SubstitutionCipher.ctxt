@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=secretAlphabet
+comment0.target=SubstitutionCipher(java.lang.String)
+comment0.text=\n\ Das\ Geheimalphabet\ wird\ in\ secretAlphabet\ eingesetzt\n
+comment1.params=secretAlphabet
+comment1.target=void\ setSecretAlphabet(java.lang.String)
+numComments=2
