@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=keyword
+comment0.target=KeywordCipher(java.lang.String)
+comment1.params=keyword
+comment1.target=void\ setKeyword(java.lang.String)
+numComments=2

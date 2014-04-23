@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=transpositionLevel
+comment0.target=TranspositionCipher(int)
+comment1.params=level
+comment1.target=void\ setTranspositionLevel(int)
+comment2.params=text
+comment2.target=java.lang.String\ encrypt(java.lang.String)
+comment2.text=\n\ Verschl\u00FCsselt\ den\ eingelesenen\ Text\ und\ gibt\ ihn\ verschl\u00FCsselt\ zur\u00FCck\n
+comment3.params=text
+comment3.target=java.lang.String\ decrypt(java.lang.String)
+comment3.text=\n\ Entschl\u00FCsselt\ den\ eingelesenen\ Text\ und\ gibt\ ihn\ entschl\u00FCsselt\ zur\u00FCck\n
+numComments=4

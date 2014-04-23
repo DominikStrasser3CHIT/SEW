@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=value
+comment0.target=ShiftCipher(int)
+comment1.params=shiftvalue
+comment1.target=void\ setShiftAmount(int)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

@@ -17,14 +17,14 @@
 public class MonoAlphabeticCipher implements Cipher
 {
     private String secretAlphabet;
-    private char[] standardAlphabet = "abcdefghijklmnopqrstuvwxyzäöüß".toCharArray(); //Standard Alphabet für encrypt und decrypt
+    protected static String standardAlphabet = "abcdefghijklmnopqrstuvwxyzäöüß"; //Standard Alphabet für encrypt und decrypt
     
     /**
      * Konstruktor
      */
     public MonoAlphabeticCipher () 
     {
-        
+        secretAlphabet = standardAlphabet;
     }
 
     /**
@@ -52,7 +52,7 @@ public class MonoAlphabeticCipher implements Cipher
         String verschl = "";
         for(int i = 0; i < text.length(); i++) 
         {
-            int stelle = new String(standardAlphabet).indexOf(text.charAt(i));
+            int stelle = standardAlphabet.indexOf(text.charAt(i));
             if(stelle < 0)
             {
                 verschl = verschl + text.charAt(i);
@@ -74,14 +74,14 @@ public class MonoAlphabeticCipher implements Cipher
         String entschl = "";
         for(int i = 0; i < text.length(); i++) 
         {
-            int stelle = new String(secretAlphabet).indexOf(text.charAt(i));
+            int stelle = secretAlphabet.indexOf(text.charAt(i));
             if(stelle < 0) 
             {
                 entschl = entschl + text.charAt(i);
             }
             else 
             {
-                entschl = entschl + standardAlphabet[stelle];
+                entschl = entschl + standardAlphabet.charAt(stelle);
             }
         }
         return entschl;
